@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tilak Patel - AI Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Tilak Patel</h1>
+            <p>AI enthusiast and Web Developer. Welcome to my personal portfolio, where I combine artificial intelligence and human creativity to build next-gen web applications.</p>
+        </div>
+       
+        <img src="./images/IMG_0208.jpeg" alt="AI and Human Collaboration" class="ai-image">
+    </section>
+
+    <section id="portfolio">
+        <h2>My AI-Powered Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/humanoid-robots-facing-each-other-royalty-free-illustration-1707861511.jpg?crop=0.597xw:1.00xh;0.207xw,0&resize=640:*" alt="AI Project 1">
+                <h3>AI Project 1</h3>
+                <p>A web application integrating human-AI interaction.</p>
+                <button class="view-more" onclick="toggleProjectDetails(1)">View More</button>
+                <div id="project1-details" class="project-details hidden">
+                    <p>Detailed information about AI Project 1, using machine learning and deep neural networks.</p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required minlength="10"></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+        <div id="form-feedback"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Tilak Patel. AI and Web Development Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/intro.js"></script>
+</body>
+</html> 
+
+
+
+
